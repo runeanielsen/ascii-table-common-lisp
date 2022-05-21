@@ -7,7 +7,7 @@
 
 (defun format-display-char (x)
   (if (or (> 32 x) (= x 127))
-      #\SPACE
+      #\space
       (code-char x)))
 
 (defun format-block (x)
