@@ -1,3 +1,11 @@
+(defpackage ascii-table
+  (:use
+   :cl)
+  (:export
+   :main))
+
+(in-package :ascii-table)
+
 (defun ascii-header ()
   (format nil "~{~A~^ | ~}" (make-list 4 :initial-element "Dec  Hex  Oct  C") ))
 
@@ -13,5 +21,6 @@
 (defun ascii-table ()
   (format nil "~A~%~{~A~%~}" (ascii-header) (ascii-rows)))
 
-(defun main ()
+(defun main (_)
+  (declare (ignorable _))
   (format t "~A" (ascii-table)))
