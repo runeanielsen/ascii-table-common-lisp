@@ -2,10 +2,18 @@
 
 Made to try out common lisp.
 
-## Running the program
+## Build and run
 
-Example running the program with SBCL.
+Requires [BuildApp.](https://www.xach.com/lisp/buildapp/)
 
+### Building
+
+```sh
+./build.sh
 ```
-sbcl --noinform --load ./src/ascii-table.lisp --eval (progn (main) (sb-ext:quit))
+
+### Running
+
+```sh
+./dist/ascii-table
 ```
